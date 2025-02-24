@@ -9,17 +9,33 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@cashbound-id/design-system": "0.0.2-beta-test.7",
+    "dayjs": "^1.11.13",
+    "next": "15.1.7",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0",
-    "next": "15.1.7"
+    "react-dom": "^19.0.0"
   },
   "devDependencies": {
-    "typescript": "^5",
+    "@eslint/eslintrc": "^3",
+    "@fit-hub-indonesia/eslint": "^1.5.0",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "eslint": "^9",
     "eslint-config-next": "15.1.7",
-    "@eslint/eslintrc": "^3"
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-jest": "^28.8.0",
+    "eslint-plugin-jsx-a11y": "^6.9.0",
+    "eslint-plugin-prettier": "^5.2.1",
+    "eslint-plugin-react": "^7.35.0",
+    "eslint-plugin-react-hooks": "^4.6.2",
+    "eslint-plugin-simple-import-sort": "^12.1.1",
+    "eslint-plugin-sort-destructure-keys": "^2.0.0",
+    "eslint-plugin-sort-keys-fix": "^1.1.2",
+    "eslint-plugin-typescript-sort-keys": "^3.2.0",
+    "globals": "^15.9.0",
+    "prettier": "^3.0.0",
+    "typescript": "^5.7.3",
+    "typescript-eslint": "^8.1.0"
   }
 }
