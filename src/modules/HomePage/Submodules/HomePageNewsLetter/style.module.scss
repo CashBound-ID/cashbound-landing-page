@@ -1,0 +1,31 @@
+@use "sass:map";
+
+$devices: (
+  "desktop": (
+    height: var(--homepage-desktop-height),
+  ),
+  "tablet": (
+    height: var(--homepage-tablet-height),
+  ),
+  "mobile": (
+    height: var(--homepage-mobile-height),
+  ),
+);
+
+.home-page-news-letter {
+  background-color: var(--homepage-background);
+
+  &__container {
+    padding: 40px 0;
+
+    @each $device, $item in $devices {
+      &[data-device="#{$device}"] {
+        height: map.get($item, height);
+      }
+    }
+  }
+
+  img {
+    object-fit: contain;
+  }
+}

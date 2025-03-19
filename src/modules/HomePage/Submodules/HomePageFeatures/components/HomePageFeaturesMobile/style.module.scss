@@ -1,0 +1,12 @@
+.home-page-features-mobile {
+
+  &[data-device="mobile"] {
+    margin: 0 -16px;
+    width: calc(100% + 32px);
+  }
+
+  &[data-device="tablet"] {
+    margin: 0 -40px;
+    width: calc(100% + 80px);
+  }
+}

@@ -1,0 +1,30 @@
+$devices: (
+  "desktop": 1200px,
+  "tablet": calc(100% - 80px),
+  "mobile": calc(100% - 32px),
+);
+$sizes: absolute,relative,fixed;
+
+.container {
+  margin: auto;
+  position: relative;
+  width: 100%;
+
+  @each $device, $width in $devices {
+    &[data-device="#{$device}"] {
+      max-width: $width;
+    }
+  }
+
+  @each $size in $sizes {
+    &[data-position="#{$size}"] {
+      position: $size;
+    }
+  }
+
+  &[data-position="fixed"],
+  &[data-position="absolute"] {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}

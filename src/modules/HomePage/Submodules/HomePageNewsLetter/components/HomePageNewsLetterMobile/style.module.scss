@@ -1,0 +1,13 @@
+.home-page-news-letter-mobile {
+  margin: auto;
+  max-width: 469px;
+  width: 100%;
+
+  &__text {
+    flex: 1;
+  }
+
+  &__form {
+    width: 100%;
+  }
+}

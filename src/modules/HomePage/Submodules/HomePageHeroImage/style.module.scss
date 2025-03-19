@@ -1,0 +1,50 @@
+.home-page-hero-image {
+  background-color: var(--WHITE);
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+  padding: 160px 0 0;
+  position: relative;
+  width: 100%;
+
+  > canvas {
+    clip-path: polygon(0% 0%, 0 60%, 50% 80%, 100% 60%, 100% 0%);
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+
+  > picture {
+    bottom: 0;
+    left: 50%;
+    position: absolute;
+    transform: translateX(-50%);
+  }
+
+  &[data-device="mobile"] {
+    min-height: 642px;
+    padding: 120px 0 0;
+  }
+
+  &[data-device="tablet"] {
+    min-height: 892px;
+  }
+
+  &[data-device="desktop"] {
+    min-height: 1008px;
+    padding: 120px 0 0;
+
+    .home-page-hero-image {
+
+      &__content {
+        max-width: 640px;
+      }
+    }
+  }
+
+  &__content {
+    margin: auto;
+  }
+}

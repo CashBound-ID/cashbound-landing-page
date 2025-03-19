@@ -1,0 +1,26 @@
+.home-page-feature-card {
+  background-color: rgba(#fff, 0.95);
+  position: relative;
+
+  &[data-device="mobile"] {
+    height: 210px;
+    max-width: 280px;
+    width: 280px;
+  }
+
+  &::before {
+    background-image: url("/illustration/illustration-sign-pattern.png");
+    bottom: 0;
+    content: "";
+    height: 88px;
+    position: absolute;
+    right: -8px;
+    width: 80px;
+  }
+
+  > * {
+    display: block;
+    position: relative;
+    z-index: 1;
+  }
+}

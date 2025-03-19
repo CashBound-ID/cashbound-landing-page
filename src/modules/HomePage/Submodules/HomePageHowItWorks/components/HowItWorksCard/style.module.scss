@@ -1,0 +1,15 @@
+.how-it-works-card {
+  width: 100%;
+
+  &[data-device="tablet"] {
+    max-width: 384px;
+    width: 384px;
+  }
+
+  &__title {
+    background-color: var(--GRAYMAUVE300);
+    border-radius: 20px;
+    margin: 16px 0 0;
+    padding: 8px 20px;
+  }
+}

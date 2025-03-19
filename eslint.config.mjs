@@ -57,6 +57,9 @@ const eslintConfig = [...baseEslintConfig([
       ]
     }
   },
+  {
+    ignores: ['./public/js/strapi-gradient.js']
+  }
 ]), ...config];
 
 export default eslintConfig;
